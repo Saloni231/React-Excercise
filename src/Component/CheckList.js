@@ -60,7 +60,6 @@ class CheckList extends Component {
                             {this.state.checkedValue.map((val,index) => 
                             <React.Fragment key={index}>
                                 <p>{val.charAt(0).toUpperCase()+val.slice(1)}</p>
-                                <br/>
                             </React.Fragment>)}
                         </div>
                     </div>
