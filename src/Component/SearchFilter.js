@@ -31,14 +31,9 @@ class SearchFilter extends Component {
     }
 
     searchResult(input) {
-      const filerResult = []
-      this.state.value.filter((val) => {
-        if (val.includes(input.toLowerCase())){
-          console.log(input)
-          filerResult.push(val)
-        }
-      })
-      this.setState({searchValue: filerResult})
+      this.setState({searchValue: this.state.value.filter((val) => {
+        return val.includes(input.toLowerCase())
+      })})
     }
 
     render() {

@@ -27,7 +27,7 @@ class CheckList extends Component {
             this.setState({checkedValue: this.state.checkedValue.concat(input.target.value)})
         }
         else{
-            this.setState({checkedValue: this.state.checkedValue.filter(function(val) {
+            this.setState({checkedValue: this.state.checkedValue.filter((val) => {
                 return val !== input.target.value;
             })})
         }
